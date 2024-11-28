@@ -1,0 +1,177 @@
+@media (max-width: 768px) {
+    .button_text{
+        display: none;
+    }
+
+    .hiden_line{
+        display:block;
+        position: fixed;
+        width: 100%;
+        margin: 0; 
+        padding: 0;
+        z-index: 1;
+    }
+
+    .burger-icon {
+        display: inline-block;
+        cursor: pointer;
+        align-self: end;
+        position: fixed;
+        z-index: 2;
+        margin-top: 2.5vh;
+        margin-left: 90vw;
+    }
+
+    .mobile-menu.active {
+        display: block; 
+    }
+
+    .our_bestsellers {
+        margin-top: 35vh;
+        gap: 22px; /* Відстань між заголовком і продуктами */
+    }
+
+    .product {
+        gap: 5px; /* Відстань між картинкою і підписом */
+        margin: 7px; /* Відстань між продуктами */
+    }
+
+    .product img {
+        width: 245px;
+        height: 245px; /* Розмір зображення */
+    }
+
+    .bestsellers {
+        font-size: 32px; /* Розмір шрифту заголовка */
+        font-weight: 390; /* Товщина шрифту заголовка */
+    }
+
+    .description {
+        font-size: 13px; /* Розмір шрифту опису продуктів */
+        font-weight: 300; /* Товщина шрифту опису */
+    }
+
+    .button_bestsellers {
+        flex-direction: column; /* Вертикальне вирівнювання продуктів */
+        gap: 7px; /* Відстань між продуктами */
+    }
+
+    .product-slider{
+        display: none;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .menu_categories {
+        display: block;
+        margin-top: 20px;
+        margin-left: 46px;
+        margin-right: 26px;
+        position: relative;
+    }
+    
+    /* Заголовок і кнопка на одному рівні */
+    .menu_categories .categories {
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        margin: 0;
+        float: left;
+    }
+    
+    .menu_categories .more {
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        float: right;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #5a5a5a;
+        margin-right: 30px;
+    }
+    
+    /* Очищення потоку */
+    .menu_categories::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Контейнер для кнопок */
+    .categories_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px; /* Відстань між кнопками */
+        justify-content: flex-start; /* Вирівнювання по лівому краю */
+        margin: 30px 0 0 0; /* Відступ між категоріями */
+    }
+    
+    /* Кнопки */
+    .categories_buttons button {
+        background: none;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        width: 80px;
+    }
+    
+    .categories_buttons button img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+    
+    .categories_buttons button p {
+        margin-top: 0px;
+        font-size: 12px;
+        font-weight: 450;
+        color: #333;
+    }
+    
+    /* Другий рядок */
+    .hidden {
+        display: none;
+    }
+    
+    .categories_buttons.row-2 {
+        margin-top: 22px;
+    }
+    
+    .frame {
+      position: relative;
+      z-index: 1;
+      width: 100vw;
+      height: unset;
+      margin-top: 0;
+    }
+
+    .video-row {
+      padding-top: 2vh;
+    }
+
+  .video-row video {
+    width: 20vw;
+    height: 484px;
+  }
+  
+  .hint_img {
+    width: 42vw;
+    height: auto;
+  }
+
+  .hint {
+    margin-top: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+  }
+
+  .futer {
+    margin-top: 5vh;
+  }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Виправлено синтаксис -->
+    <title>Bakery</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="button_text">
+            <button class="main_button menu-button">Головна</button>
+            <form>
+                <select name="Меню" id="lang" class="menu_button">
+                    <option value="" disabled selected>Меню</option>
+                    <option value="1">Хліб</option>
+                    <option value="2">Макаронси</option>
+                    <option value="3">Печиво</option>
+                    <option value="4">Торти</option>
+                    <option value="5">Цукерки</option>
+                    <option value="6">Інше</option>
+                </select>
+            </form>
+            <img class="logo" src="images/logo.png" alt="Опис зображення">
+            <a href="#hint" class="contacts_button menu-button">Контакти</a>
+            <a href="#our_new_products" class="new_button menu-button">Новинки</a>
+        </div>
+        <img class="hiden_line" src="images/верхня лінія.png" alt="Опис зображення">
+        <div class="burger-icon">
+            <img src="images/burger_menu.png" alt="Меню" id="burger-icon">
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#our_new_products">Новинки</a></li>
+            <li><a href="#hint">Контакти</a></li>
+        </ul>
+    </header> 
+    
+    <main>
+        <div class="our_bestsellers">
+            <p class="bestsellers">Наші бестселлери</p>
+            <div class="button_bestsellers">
+                <div class="product">
+                    <button class="bstslr1">
+                        <img src="images/макаронс.png" alt="Макаронс">
+                    </button>
+                    <p class="description">Макаронс какао<br>95 ₴ / шт.</p>
+                </div>
+                <div class="product">
+                    <button class="bstslr2">
+                        <img src="images/чізкейк.png" alt="Чізкейк">
+                    </button>
+                    <p class="description">Чізкейк лаймовий<br>150 ₴ / 100 г</p>
+                </div>
+                <div class="product">
+                    <button class="bstslr3">
+                        <img src="images/печенько.png" alt="Печиво">
+                    </button>
+                    <p class="description">Шоколадне печиво<br>40 ₴ / шт.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu_categories">
+            <p class="categories">Категорії меню</p>
+            <button class="more">Більше</button>
+            <div class="categories_buttons row-1">
+                <button class="m_bread">
+                    <img src="images/bread_m.png" alt="Хліб">
+                    <p>Хліб</p>
+                </button>
+                <button class="m_macaroon">
+                    <img src="images/macaroon_m.png" alt="Макаронси">
+                    <p>Макаронси</p>
+                </button>
+                <button class="m_cookie">
+                    <img src="images/cookie_m.png" alt="Печиво">
+                    <p>Печиво</p>
+                </button>
+                <button class="m_cake">
+                    <img src="images/cake_m.png" alt="Торти">
+                    <p>Торти</p>
+                </button>
+            </div>
+            <div class="categories_buttons row-2 hidden">
+                <button class="m_sweets">
+                    <img src="images/sweets_m.png" alt="Цукерки">
+                    <p>Цукерки</p>
+                </button>
+                <button class="m_other">
+                    <img src="images/other_m.png" alt="Інше">
+                    <p>Інше</p>
+                </button>
+            </div>
+        </div>
+        <div class="mobile_new_products">
+            
+        </div>
+        <div id="our_new_products" class="our_new_products">
+            <img class="new" src="images/Надпис новинки.png" alt="Опис зображення">
+            <div class="product-slider">
+                <div class="newproduct_container">
+                    <div class="product">
+                        <button class="newproduct1">
+                            <img src="images/ожина.png" alt="Button Image">
+                        </button>
+                        <p>Тістечко<br>“Кремова ожина”<br>120 ₴ / шт.</p>
+                    </div>
+                    <div class="product">
+                        <button class="newproduct2">
+                            <img src="images/трюфель.png" alt="Button Image">
+                        </button>
+                        <p>Цукерка “Трюфель”<br>38 ₴ / шт.</p>
+                    </div>
+                    <div class="product">
+                        <button class="newproduct3">
+                            <img src="images/тарта.png" alt="Button Image">
+                        </button>
+                        <p>Тарта ягідна<br>60 ₴ / шт.</p>
+                    </div>
+                    <div class="product">
+                        <button class="newproduct4">
+                            <img src="images/печенько.png" alt="Button Image">
+                        </button>
+                        <p>Шоколадне печиво<br>40 ₴ / шт.</p>
+                    </div>
+                    <div class="product">
+                        <button class="newproduct5">
+                            <img src="images/ожина.png" alt="Button Image">
+                        </button>
+                        <p>Тістечко<br>“Кремова ожина”<br>120 ₴ / шт.</p>
+                    </div>
+                    <div class="product">
+                        <button class="newproduct6">
+                            <img src="images/трюфель.png" alt="Button Image">
+                        </button>
+                        <p>Цукерка “Трюфель”<br>38 ₴ / шт.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <img class="frame" src="images/Group 16.png" alt="Рамка">
+            <div class="video-row">
+                <video autoplay loop muted playsinline>
+                    <source src="video/IMG_4793.MP4" type="video/mp4">
+                </video>
+                <video autoplay loop muted playsinline>
+                    <source src="video/IMG_4784.MP4" type="video/mp4">
+                </video>
+                <video autoplay loop muted playsinline>
+                    <source src="video/IMG_4789.MP4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div id="menu" class="menu">
+            <img class="menu_p" src="images/Надпис меню.png" alt="Опис зображення">
+            <div class="menu_rectangle"></div>
+            <div class="buttons_menu">
+                <button class="bread">
+                    <img src="images/хліб.png" alt="Button Image">
+                    <img class="bread_click" src="images/Вибір_хліб.png" alt="Опис зображення">
+                </button>
+                <button class="macaroons">
+                    <img src="images/макарунчики.png" alt="Button Image">
+                    <img class="macaroons_click" src="images/Вибір_макаронси.png" alt="Опис зображення">
+                </button>
+                <button class="cookies">
+                    <img src="images/печиво.png" alt="Button Image">
+                    <img class="cookies_click" src="images/Вибір_печиво.png" alt="Опис зображення">
+                </button>
+                <button class="cakes">
+                    <img src="images/тортики.png" alt="Button Image">
+                    <img class="cakes_click" src="images/Вибір_торти.png" alt="Опис зображення">
+                </button>
+                <button class="candy">
+                    <img src="images/Цукерки.png" alt="Button Image">
+                    <img class="candy_click" src="images/Вибір_цукерки.png" alt="Опис зображення">
+                </button>
+                <button class="other">
+                    <img src="images/інше.png" alt="Button Image">
+                    <img class="other_click" src="images/Вибір_інше.png" alt="Опис зображення">
+                </button>
+            </div>
+        </div>
+        <div id="hint" class="hint">
+            <img class="hint_img" src="images/для підказки.png" alt="Опис зображення">
+            <div class="hint_container">
+                <p class="h_title">Не знайшли те, що шукали?</p>
+                <p class="h_text">Ми з радістю створимо унікальний десерт або випічку за вашим замовленням! Звертайтеся до наших майстрів, і вони втілять вашу ідею в найсмачнішому вигляді!</p>
+                <button id="open-form-button">Зв’яжіться з нами</button>
+            </div>
+        </div>
+        <div class="form-popup" id="form-popup">
+            <form class="form-container" id="feedback-form">
+                <h2>Залиште свої побажання</h2>
+    
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+    
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефону" required>
+    
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+    
+                <label for="comments">Опишіть ваші побажання</label>
+                <textarea id="comments" name="comments" placeholder="Ваші побажання" required></textarea>
+    
+                <button type="submit" class="btn">Надіслати</button>
+                <button type="button" class="btn cancel" id="close-form-button">Закрити</button>
+            </form>
+        </div>
+        <div class="futer">
+            <div class="futer_p1">
+                <button class="about_us">Про нас</button>
+                <button class="blog">Блог</button>
+                <button class="become_worker">Стати працівником</button>
+                <div class="social_media">
+                    <button class="instagram">
+                        <img src="images/інстаграм.png" alt="Button Image">
+                    </button>
+                    <button class="facebook">
+                        <img src="images/фейсбук.png" alt="Button Image">
+                    </button>
+                    <button class="tiktok">
+                        <img src="images/тік ток.png" alt="Button Image">
+                    </button>
+                </div>
+            </div>
+            <div class="futer_p2">
+                <p>+380 (000) 000 0000</p>
+                <p>вул. Центральна, 24,<br>м. Львів, Львівська область,<br>79000, Україна</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script> <!-- Переміщено для правильного порядку -->
+</body>
+</html>
